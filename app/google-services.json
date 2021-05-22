@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "250309558143",
+    "project_id": "projects-c6ffb",
+    "storage_bucket": "projects-c6ffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250309558143:android:a1043c9be39512b23b644a",
+        "android_client_info": {
+          "package_name": "com.example.masharie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250309558143-nhcc0hie2m4hng18qsa515rjeha4df9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.masharie",
+            "certificate_hash": "5dd4fb4400f8088b28a1bb7b99b54bedc64dceb8"
+          }
+        },
+        {
+          "client_id": "250309558143-318458lopiq5jmcak9g13e7gpu39ukei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrhfleNLPOyr0C-v3FuWc2eaizt9L7gok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250309558143-318458lopiq5jmcak9g13e7gpu39ukei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

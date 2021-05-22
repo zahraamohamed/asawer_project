@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/studentHomeFragment" android:icon="@drawable/ic_home" android:title="الرئيسية"/>
+    <item android:id="@+id/studentNotificationsFragment" android:icon="@drawable/ic_notifications" android:title="الأشعارات"/>
+    <item android:id="@+id/studentAccountFragment" android:icon="@drawable/person_ic" android:title="حسابي"/>
+</menu>

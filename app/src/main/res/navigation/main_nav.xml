@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.masharie.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/addProjectFragment"
+        android:name="com.example.masharie.Fragments.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.masharie.Fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_singleProjectFragment"
+            app:destination="@id/singleProjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleProjectFragment"
+        android:name="com.example.masharie.Fragments.SingleProjectFragment"
+        android:label="fragment_single_project"
+        tools:layout="@layout/fragment_single_project" >
+        <argument
+            android:name="currentProject"
+            app:argType="com.example.masharie.Data.ProjectData" />
+        <action
+            android:id="@+id/action_singleProjectFragment_to_accountFragment3"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_singleProjectFragment_to_editProjectFragment"
+            app:destination="@id/editProjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProjectFragment"
+        android:name="com.example.masharie.Fragments.EditProjectFragment"
+        android:label="fragment_edit_project"
+        tools:layout="@layout/fragment_edit_project" >
+        <action
+            android:id="@+id/action_editProjectFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <argument
+            android:name="editCurrentProject"
+            app:argType="com.example.masharie.Data.ProjectData" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.masharie.Fragments.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

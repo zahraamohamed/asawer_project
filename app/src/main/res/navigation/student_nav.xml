@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_nav"
+    app:startDestination="@id/studentHomeFragment">
+
+    <fragment
+        android:id="@+id/studentHomeFragment"
+        android:name="com.example.masharie.Fragments.StudentHomeFragment"
+        android:label="fragment_student_home"
+        tools:layout="@layout/fragment_student_home" >
+        <action
+            android:id="@+id/action_studentHomeFragment_to_teacherAccountFragment"
+            app:destination="@id/teacherAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentNotificationsFragment"
+        android:name="com.example.masharie.Fragments.StudentNotificationsFragment"
+        android:label="fragment_student_notifications"
+        tools:layout="@layout/fragment_student_notifications" />
+    <fragment
+        android:id="@+id/studentAccountFragment"
+        android:name="com.example.masharie.Fragments.StudentAccountFragment"
+        android:label="fragment_student_account"
+        tools:layout="@layout/fragment_student_account" />
+    <fragment
+        android:id="@+id/studentSingleProjectFragment"
+        android:name="com.example.masharie.Fragments.StudentSingleProjectFragment"
+        android:label="fragment_student_single_project"
+        tools:layout="@layout/fragment_student_single_project" >
+        <argument
+            android:name="cProject"
+            app:argType="com.example.masharie.Data.ProjectData" />
+        <action
+            android:id="@+id/action_studentSingleProjectFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherAccountFragment"
+        android:name="com.example.masharie.Fragments.TeacherAccountFragment"
+        android:label="fragment_teacher_account"
+        tools:layout="@layout/fragment_teacher_account" >
+        <argument
+            android:name="current_teacher"
+            app:argType="com.example.masharie.Data.User" />
+        <action
+            android:id="@+id/action_teacherAccountFragment_to_studentSingleProjectFragment"
+            app:destination="@id/studentSingleProjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.masharie.Fragments.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" />
+</navigation>

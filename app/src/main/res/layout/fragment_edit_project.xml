@@ -18,6 +18,15 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_undraw_online_ad_re_ol62"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView6" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -39,17 +48,18 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="24dp"
-                android:backgroundTint="#3D1947"
+                android:backgroundTint="@color/my_color1"
                 android:textDirection="rtl"
                 app:cardCornerRadius="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView6">
+                app:layout_constraintTop_toBottomOf="@+id/v">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
+                    android:background="@color/my_color1"
                     android:padding="20dp">
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -57,14 +67,13 @@
                         android:layout_height="wrap_content"
                         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
                         android:layout_marginBottom="10dp"
-                        android:hint="عنوان المشروع"
-                        android:textColorHint="#ddd"
+                        android:hint="@string/n"
+                        android:textColorHint="#000"
                         app:boxBackgroundMode="filled"
-                        app:boxBackgroundColor="#513358"
                         app:boxStrokeWidth="0dp"
                         app:boxStrokeWidthFocused="0dp"
                         app:startIconDrawable="@drawable/ic_edit"
-                        app:startIconTint="#ddd"
+                        app:startIconTint="#000000"
                         app:boxCornerRadiusBottomEnd="5dp"
                         app:boxCornerRadiusBottomStart="5dp"
                         app:boxCornerRadiusTopStart="5dp"
@@ -73,9 +82,10 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/editTextProjectTitle"
                             android:layout_width="match_parent"
+                            android:background="@drawable/txt_shape"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/droid_arabic"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="14sp"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -86,13 +96,12 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
                         android:layout_marginBottom="10dp"
                         android:hint="التفاصيل"
-                        android:textColorHint="#ddd"
+                        android:textColorHint="#000"
                         app:boxBackgroundMode="filled"
-                        app:boxBackgroundColor="#513358"
                         app:boxStrokeWidth="0dp"
                         app:boxStrokeWidthFocused="0dp"
                         app:startIconDrawable="@drawable/ic_articlel"
-                        app:startIconTint="#ddd"
+                        app:startIconTint="#000"
                         app:boxCornerRadiusBottomEnd="5dp"
                         app:boxCornerRadiusBottomStart="5dp"
                         app:boxCornerRadiusTopStart="5dp"
@@ -103,7 +112,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/droid_arabic"
-                            android:textColor="@color/white"
+                            android:background="@drawable/txt_shape"
+                            android:textColor="@color/black"
                             android:inputType="textMultiLine"
                             android:textSize="14sp"/>
 
@@ -114,14 +124,13 @@
                         android:layout_height="wrap_content"
                         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
                         android:layout_marginBottom="10dp"
-                        android:hint="الملاحظات"
-                        android:textColorHint="#ddd"
+                        android:hint="@string/notes"
+                        android:textColorHint="#000"
                         app:boxBackgroundMode="filled"
-                        app:boxBackgroundColor="#513358"
                         app:boxStrokeWidth="0dp"
                         app:boxStrokeWidthFocused="0dp"
                         app:startIconDrawable="@drawable/ic_assignment"
-                        app:startIconTint="#ddd"
+                        app:startIconTint="#000"
                         app:boxCornerRadiusBottomEnd="5dp"
                         app:boxCornerRadiusBottomStart="5dp"
                         app:boxCornerRadiusTopStart="5dp"
@@ -131,8 +140,9 @@
                             android:id="@+id/editTextProjectNotes"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/txt_shape"
                             android:fontFamily="@font/droid_arabic"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:inputType="textMultiLine"
                             android:textSize="14sp"/>
 
@@ -143,9 +153,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:layout_marginTop="20dp"
-                        android:backgroundTint="@color/btn_background"
-                        android:fontFamily="@font/droid_arabic"
-                        android:text="تحديث"
+android:background="@drawable/shape_sign"                        android:fontFamily="@font/droid_arabic"
+                        android:text="@string/update"
                         android:textColor="@color/my_color1"
                         android:textSize="16sp" />
 

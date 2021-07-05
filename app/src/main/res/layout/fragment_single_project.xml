@@ -15,7 +15,17 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:background="@color/my_color1"
             android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_undraw_online_ad_re_ol62"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView10" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -25,7 +35,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/droid_arabic"
-                android:text="تفاصيل المشروع"
+                android:text="@string/det"
                 android:textColor="@color/my_color4"
                 android:textSize="26sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -37,17 +47,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="24dp"
-                android:backgroundTint="#3D1947"
+                android:background="@color/my_color1"
                 android:minHeight="100dp"
                 android:textDirection="rtl"
                 app:cardCornerRadius="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10">
+                app:layout_constraintTop_toBottomOf="@+id/v">
 
                 <LinearLayout
+                    android:background="@color/my_color4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -58,7 +69,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/droid_arabic"
-                        android:text="العنوان :"
+                        android:text="@string/title"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -83,7 +94,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/droid_arabic"
-                        android:text="التفاصيل :"
+                        android:text="@string/detiles"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -108,7 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/droid_arabic"
-                        android:text="الملاحظات :"
+                        android:text="@string/nots"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -126,19 +137,23 @@
                         android:id="@+id/editProjectBtn"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:backgroundTint="#0652DD"
+                        android:layout_marginHorizontal="16dp"
+                        android:backgroundTint="@color/white"
                         android:fontFamily="@font/droid_arabic"
-                        android:text="تعديل"
-                        app:icon="@drawable/ic_edit"
-                        app:iconGravity="textStart" />
+                        android:text="@string/edit"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                         />
 
                     <Button
                         android:id="@+id/deleteProjectBtn"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:backgroundTint="#EA2027"
+                        android:backgroundTint="@color/cancel"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginHorizontal="16dp"
                         android:fontFamily="@font/droid_arabic"
-                        android:text="حذف"
+                        android:text="@string/delet"
                         app:icon="@drawable/ic_delete"
                         app:iconGravity="textStart" />
                 </LinearLayout>

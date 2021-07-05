@@ -6,13 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:clickable="true"
     android:focusable="true"
+    android:background="@color/my_color1"
     android:layout_marginBottom="8dp"
     android:layoutDirection="ltr"
-    android:backgroundTint="#3D1947">
+  >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_sign">
 
         <TextView
             android:id="@+id/notiTitle"
@@ -22,6 +24,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/droid_arabic"
+            android:layout_marginHorizontal="16dp"
             android:text="أسم المشروع يكون هنا أسم المشروع يكون هنا"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -37,11 +40,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="8dp"
-            android:backgroundTint="#4cd137"
+            android:backgroundTint="@color/white"
             android:fontFamily="@font/droid_arabic"
-            android:text="قبول"
+            android:text="@string/yes"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/notiTitle" />
@@ -53,9 +57,9 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:backgroundTint="#EA2027"
+            android:backgroundTint="@color/cancel"
             android:fontFamily="@font/droid_arabic"
-            android:text="رفض"
+            android:text="@string/no"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/acceptBtn"
             app:layout_constraintTop_toBottomOf="@+id/notiTitle" />

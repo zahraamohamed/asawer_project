@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <string name="wait">يرجى الانتظار ....</string>
+
+    <string name="app_name">مشاريع</string>
+    <string name="myA">حسابي</string>
+    <string name="notification">الأشعارات</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcom">أهلاً بك في مشاريع</string>
+    <string name="sign_up">تسجيل الدخول</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="submit">دخول</string>
+    <string name="password">كلمة السر</string>
+    <string name="projects">مشاريع</string>
+    <string name="proj">المشاريع المتاحة :</string>
+    <string name="done">تم حجز المشروع بنجاح</string>
+    <string name="home">العودة الى الرئيسية</string>
+    <string name="hi">أهلاً وسهلاً بك أستاذ</string>
+    <string name="num">عدد المشاريع الخاصة بك</string>
+    <string name="det">تفاصيل المشروع</string>
+    <string name="detiles">التفاصيل :</string>
+    <string name="nots">الملاحظات :</string>
+    <string name="edit">تعديل</string>
+    <string name="delet">حذف</string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="well">أهلاً وسهلاً بك</string>
+    <string name="select">قم بأختيار مشرف المشروع :</string>
+    <string name="yes">قبول</string>
+    <string name="no">رفض</string>
+    <string name="detp">تفاصيل المشروع</string>
+    <string name="title">العنوان :</string>
+    <string name="note">الملاحظات :</string>
+    <string name="book">حجز المشروع</string>
+    <string name="dett">التفاصيل :</string>
+    <string name="update">تحديث</string>
+    <string name="n">عنوان المشروع</string>
+    <string name="notes">الملاحظات</string>
+    <string name="add">أضافة المشروع</string>
+    <string name="nonot">لا توجد اشعارات حتى الان</string>
+    <string name="addo">أضافة مشروع جديد</string>
+    <string name="nn">الملاحظات</string>
+    <string name="d">التفاصيل</string>
+    <string name="ti">عنوان المشروع</string>
+    <string name="gg">المشاريع المتاحة :</string>
+</resources>

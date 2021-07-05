@@ -15,8 +15,18 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content">
 
+            <ImageView
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_undraw_online_ad_re_ol62"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView10" />
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
@@ -25,7 +35,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/droid_arabic"
-                android:text="تفاصيل المشروع"
+                android:text="@string/detp"
                 android:textColor="@color/my_color4"
                 android:textSize="26sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -36,18 +46,18 @@
                 android:id="@+id/cardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+             android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="24dp"
-                android:backgroundTint="#3D1947"
+
                 android:minHeight="100dp"
                 android:textDirection="rtl"
                 app:cardCornerRadius="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10">
+                app:layout_constraintTop_toBottomOf="@+id/v">
 
                 <LinearLayout
+                    android:background="#F6F1FE"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -58,18 +68,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/droid_arabic"
-                        android:text="العنوان :"
-                        android:textColor="@color/white"
+                        android:text="@string/title"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/TextViewProjectTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="16dp"
                         android:fontFamily="@font/droid_arabic"
                         android:text=""
-                        android:textColor="@color/white"
+
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
                     <View
                         android:layout_width="match_parent"
@@ -83,18 +95,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/droid_arabic"
-                        android:text="التفاصيل :"
-                        android:textColor="@color/white"
+                        android:text="@string/dett"
+                        android:layout_marginBottom="16dp"
+
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/TextViewProjectDetails"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="16dp"
                         android:fontFamily="@font/droid_arabic"
                         android:text=""
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
                     <View
                         android:layout_width="match_parent"
@@ -108,27 +122,31 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/droid_arabic"
-                        android:text="الملاحظات :"
-                        android:textColor="@color/white"
+                        android:text="@string/note"
+                        android:layout_marginBottom="16dp"
+
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/TextViewProjectNotes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="16dp"
                         android:fontFamily="@font/droid_arabic"
                         android:text=""
-                        android:textColor="@color/white"
+
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                     <Button
                         android:id="@+id/takeProjectBtn"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:backgroundTint="#0652DD"
+                        android:layout_marginVertical="16dp"
+                        android:background="@drawable/shape_sign"
                         android:fontFamily="@font/droid_arabic"
-                        android:text=" حجز المشروع"/>
+                        android:text="@string/book"/>
 
 
                 </LinearLayout>

@@ -17,7 +17,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:text=""
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:fontFamily="@font/droid_arabic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,9 +29,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#EA2027"
+        android:backgroundTint="@color/cancel"
         android:fontFamily="@font/droid_arabic"
-        android:text=" تسجيل الخروج"
+        android:text="@string/sign_out"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teacherName" />
@@ -44,8 +44,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="المشاريع المتاحة :"
-        android:textColor="@color/white"
+        android:text="@string/proj"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:fontFamily="@font/droid_arabic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+       />
 
     <TextView
         android:id="@+id/noResult"

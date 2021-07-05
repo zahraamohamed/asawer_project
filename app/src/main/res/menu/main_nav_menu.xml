@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/homeFragment" android:icon="@drawable/ic_home" android:title="الرئيسية"/>
-    <item android:id="@+id/notificationsFragment" android:icon="@drawable/ic_notifications" android:title="الأشعارات"/>
-    <item android:id="@+id/accountFragment" android:icon="@drawable/person_ic" android:title="حسابي"/>
+    <item android:id="@+id/homeFragment" android:icon="@drawable/ic_home" android:title="@string/home"/>
+    <item android:id="@+id/notificationsFragment" android:icon="@drawable/ic_notifications" android:title="@string/notification"/>
+    <item android:id="@+id/accountFragment" android:icon="@drawable/person_ic" android:title="@string/myA"/>
     <item android:id="@+id/placeholder" android:title="" android:enabled="false"/>
 </menu>

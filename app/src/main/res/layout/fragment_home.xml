@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/droid_arabic"
-        android:text="أهلاً وسهلاً بك أستاذ"
+        android:text="@string/hi"
         android:textColor="@color/my_color4"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,24 +43,25 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        app:cardBackgroundColor="@color/my_color3"
         app:cardCornerRadius="5dp"
+        android:background="@color/my_color1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/teacherNameHome">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/my_color4"
+            >
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_margin="16dp"
                 android:fontFamily="@font/droid_arabic"
-                android:text="عدد المشاريع الخاصة بك"
+                android:text="@string/num"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -70,8 +71,7 @@
                 android:id="@+id/projectCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
+              android:layout_margin="16dp"
                 android:fontFamily="@font/droid_arabic"
                 android:text=""
                 android:textColor="@color/white"

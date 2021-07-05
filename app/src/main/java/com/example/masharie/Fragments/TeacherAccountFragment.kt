@@ -1,6 +1,7 @@
 package com.example.masharie.Fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -63,7 +64,7 @@ class TeacherAccountFragment : Fragment() {
             }
             if (snapshot != null) {
                 val myData = snapshot.toObjects(ProjectData::class.java)
-                myAdapter.setData(myData)
+
                 if (myData.isEmpty()){
                     projectsRecycler.visibility = View.INVISIBLE
                     noResult.visibility = View.VISIBLE

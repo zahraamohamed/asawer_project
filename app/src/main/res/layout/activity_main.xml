@@ -20,20 +20,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:fabAlignmentMode="end"
-        app:fabCradleMargin="10dp"
+        android:backgroundTint="@color/black"
         app:contentInsetStart="0dp"
-        android:backgroundTint="@color/black" >
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="10dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/mainNavBottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/main_nav_menu"
+            android:background="#EEEEEE"
             app:elevation="0dp"
-            android:background="@android:color/transparent"
+            app:itemIconTint="@color/custom_color_for_icon"
             app:itemTextColor="@color/custom_color_for_icon"
-            app:itemIconTint="@color/custom_color_for_icon"/>
+            app:menu="@menu/main_nav_menu" />
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 

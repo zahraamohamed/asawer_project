@@ -2,4 +2,9 @@
     <string name="app_name">مشاريع</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcom">أهلاً بك في مشاريع</string>
+    <string name="sign_up">تسجيل الدخول</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="submit">دخول</string>
+    <string name="password">كلمة السر</string>
 </resources>

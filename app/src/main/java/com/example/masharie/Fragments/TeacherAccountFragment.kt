@@ -64,7 +64,7 @@ class TeacherAccountFragment : Fragment() {
             }
             if (snapshot != null) {
                 val myData = snapshot.toObjects(ProjectData::class.java)
-
+                    myAdapter.setData(myData)
                 if (myData.isEmpty()){
                     projectsRecycler.visibility = View.INVISIBLE
                     noResult.visibility = View.VISIBLE
